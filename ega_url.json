@@ -1,0 +1,434 @@
+{
+	"info": {
+		"_postman_id": "096fba18-790c-4b5c-843d-06ef78f8be79",
+		"name": "ega",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ClientRequests",
+			"item": [
+				{
+					"name": "Créer un client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"client\":1,\r\n  \"typeCompte\":\"COURANT\"\r\n \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/creer-client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"creer-client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Information d'un client",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nom\":\"FANGBEMI\",\r\n  \"prenom\":\"Abla édith\",\r\n  \"sexe\":\"F\",\r\n  \"adresse\":\"lomé togo\",\r\n  \"courriel\":\"edith@gmail.com\",\r\n  \"telephone\":\"93123709\",\r\n  \"dateNaiss\":\"2002-09-16\",\r\n  \"nationalite\":\"togolaise\"\r\n\r\n  \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/client/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"client",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Liste des clients",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nom\":\"ATADE NANGUIT\",\r\n  \"prenom\":\"Anxis Prince\",\r\n  \"sexe\":\"M\",\r\n  \"adresse\":\"lomé togo\",\r\n  \"courriel\":\"anxis@gmail.com\",\r\n  \"telephone\":\"93123709\",\r\n  \"dateNaiss\":\"2002-05-23\",\r\n  \"nationalite\":\"togolaise\"\r\n\r\n  \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Liste des Clients supprimés",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nom\":\"ADJOGAN\",\r\n  \"prenom\":\"Mireille\",\r\n  \"sexe\":\"M\",\r\n  \"adresse\":\"lomé togo\",\r\n  \"courriel\":\"adjovi@gmail.com\",\r\n  \"telephone\":\"93123709\",\r\n  \"dateNaiss\":\"2002-05-23\",\r\n  \"nationalite\":\"togolaise\"\r\n \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/client/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"client",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifier un client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nom\":\"FANGBEMI\",\r\n  \"prenom\":\"Abla édith\",\r\n  \"sexe\":\"F\",\r\n  \"adresse\":\"lomé togo\",\r\n  \"courriel\":\"edith@gmail.com\",\r\n  \"telephone\":\"93123709\",\r\n  \"dateNaiss\":\"2002-09-16\",\r\n  \"nationalite\":\"togolaise\"\r\n\r\n  \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supprimer un client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nom\":\"FANGBEMI\",\r\n  \"prenom\":\"Abla édith\",\r\n  \"sexe\":\"F\",\r\n  \"adresse\":\"lomé togo\",\r\n  \"courriel\":\"edith@gmail.com\",\r\n  \"telephone\":\"93123709\",\r\n  \"dateNaiss\":\"2002-09-16\",\r\n  \"nationalite\":\"togolaise\"\r\n\r\n  \r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/supprimer/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"supprimer",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CompteRequests",
+			"item": [
+				{
+					"name": "Créer un compte",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n  \"idClient\":6,\r\n  \"typeCompte\":\"EPARGNE\"\r\n  \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/creer-compte",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"creer-compte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Information d'un compte",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ega/compte/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"compte",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Liste des comptes supprimés",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ega/comptesDeleted",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"comptesDeleted"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Liste des comptes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ega/comptes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"comptes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modifier compte",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idClient\":7,\r\n  \"typeCompte\":\"EPARGNE\"\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/update-compte/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"update-compte",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Supprimer compte",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/ega/supprimer-compte/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"supprimer-compte",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Effectuer un depot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"numeroCompte\": \"XDVST2023\",\r\n  \"montant\": 1000.0\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/versement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"versement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Effectuer un retrait",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"numeroCompte\": \"2GN2V2023\",\r\n  \"montant\": 2000.0\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/retrait",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"retrait"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Effectuer un transfert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"compteEmetteur\": \"XDVST2023\",\r\n  \"compteRecepteur\": \"RSGMQ2023\",\r\n  \"montant\": 2000.0\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/ega/virement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"ega",
+								"virement"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
